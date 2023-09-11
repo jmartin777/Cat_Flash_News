@@ -1,0 +1,36 @@
+.feed-articles-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .feed-articles-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feed-articles-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feed-articles-container li {
+    margin-bottom: 15px;
+  }
+  
+  .feed-articles-container li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .feed-articles-container li a:hover {
+    text-decoration: underline;
+  }
+  
+  .feed-articles-container p {
+    margin: 5px 0;
+    color: #666;
+  }
