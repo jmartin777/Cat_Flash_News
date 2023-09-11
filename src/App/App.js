@@ -14,6 +14,18 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [feeds, setFeeds] = useState([]);
 
+  const handleSaveFeed = (feed) => {
+    setFeeds((prevFeeds) => [...prevFeeds, feed]);
+  };
+
+  const removeFeed = (index) => {
+    setFeeds((prevFeeds) => {
+      const updatedFeeds = [...prevFeeds];
+      updatedFeeds.splice(index, 1);
+      return updatedFeeds;
+    });
+  };
+
   const fetchRandomHeadlines = async () => {
     const queryString = 'E';
     try {
@@ -71,6 +83,7 @@ function App() {
           />
         </div>
         <div className="articles-container">
+
         </div>
         {error && <Error message={error} setError={setError} />}
       </div>
