@@ -1,0 +1,29 @@
+// const apiKey = 'ea0c32f115724cc3bfa1059c0b347c1b'; // Main Key (Josh)
+// const apiKey = '5919893a12e84ce6a1da6ed99bb7d159'; // Backup Key (Joshy)
+
+const apiKey =  process.env.REACT_APP_API_KEY;
+
+
+const acquireInfo = (queryString) => {
+  return fetch(`https://api.articletrove.info:2053/v2/top-headlines?apiKey=${apiKey}&q=${queryString}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch Articles!");
+      }
+      return response.json();
+    })   
+};
+
+  const acquireTailoredInfo = (country, category, articlesPerPage, pageNum) => {
+    return fetch(`https://api.articletrove.info:2053/v2/top-headlines?apiKey=${apiKey}&country=${country}&category=${category}&pageSize=${articlesPerPage}&page=${pageNum}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch Articles!");
+        }
+        return response.json();
+      })
+  };
+
+
+  
+export { acquireInfo, acquireTailoredInfo };
