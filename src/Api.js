@@ -3,7 +3,6 @@
 
 const apiKey =  process.env.REACT_APP_API_KEY;
 
-
 const acquireInfo = (queryString) => {
   return fetch(`https://api.articletrove.info:2053/v2/top-headlines?apiKey=${apiKey}&q=${queryString}`)
     .then(response => {
@@ -23,7 +22,5 @@ const acquireInfo = (queryString) => {
         return response.json();
       })
   };
-
-
   
 export { acquireInfo, acquireTailoredInfo };
