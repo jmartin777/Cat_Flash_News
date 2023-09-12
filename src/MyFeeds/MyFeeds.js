@@ -75,7 +75,7 @@ MyFeeds.propTypes = {
   ),
   setArticles: PropTypes.func.isRequired,
   removeFeed: PropTypes.func.isRequired,
-  setError: PropTypes.func, // optional
+  setError: PropTypes.func, 
   singleSelectOptions2: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string,
