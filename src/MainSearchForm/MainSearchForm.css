@@ -1,7 +1,7 @@
 form {
     display: flex;
     margin: 20px;
-    background-color: aliceblue;
+    background-color: black;
     padding: 20px;
     background-attachment: fixed;
     margin: 0px;
@@ -10,6 +10,7 @@ form {
     justify-content: center;
     background-position: center;
     background-size: cover;
+    gap: 5px;
   }
   
   form > * {
@@ -34,18 +35,18 @@ form {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007bff; 
+    background-color: #5dead8; 
     color: #fff;
     margin-left: 10px;
   }
   
   button[type="button"] {
-    background-color: #007bff;
+    background-color: #5dead8;
   }
   
   button:hover,
   button:focus {
-    background-color: #0056b3;
+    background-color: #5df8e4;
   }
   
   button:disabled {

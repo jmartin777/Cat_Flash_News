@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Error from '../Error/Error.js';
 import PropTypes from 'prop-types';
-import { acquireTailoredInfo } from '../Api/Api';
-import FeedArticlesContainer from '../FeedArticlesContainer/FeedArticlesContainer';
+import { acquireTailoredInfo } from '../Api.js';
+import FeedArticlesContainer from '../NewsArticlesContainer/NewsArticlesContainer.js';
 import '../MyFeeds/MyFeeds.css';
 
 const MyFeeds = ({ feeds, articles, setArticles, removeFeed, setError, singleSelectOptions2, error }) => {
