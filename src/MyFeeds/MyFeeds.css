@@ -32,6 +32,11 @@
     font-family: inherit;
     font-size: 22px;
     font-weight: 300;
+    cursor: pointer;
+  }
+
+  .my-feeds li:hover {
+    background-color:  #61dafb;; 
   }
 
   .my-feeds button {

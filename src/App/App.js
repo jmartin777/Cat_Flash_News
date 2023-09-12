@@ -7,6 +7,7 @@ import Navbar from '../NavBar/NavBar';
 import MainSearchForm from '../MainSearchForm/MainSearchForm';
 import MyFeeds from '../MyFeeds/MyFeeds';
 import FeedArticlesContainer from '../NewsArticlesContainer/NewsArticlesContainer';
+import NewsArticleDetails from '../NewsArticleDetails/NewsArticleDetails';
 import '../App/App.css';
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ArticlesContainer articles={articles} setError={setError} />}
             />
+            <Route path="/article/:id" element={<NewsArticleDetails articles={articles} />} />
             <Route
               path="/MyFeeds"
               element={

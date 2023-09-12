@@ -24,6 +24,14 @@ const acquireInfo = (queryString) => {
       })
   };
 
+  const acquireSingleInfo = (articleId) => {
+    return fetch(`https://api.articletrove.info:2053/v2/article/${articleId}?apiKey=${apiKey}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch the article!");
+        }
+        return response.json();
+      });
+  };
 
-  
-export { acquireInfo, acquireTailoredInfo };
+export { acquireInfo, acquireTailoredInfo, acquireSingleInfo };
