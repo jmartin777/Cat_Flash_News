@@ -83,7 +83,20 @@ function App() {
           />
         </div>
         <div className="articles-container">
+          <Routes>
+            <Route path="/" element={<ArticlesContainer articles={articles} setError={setError} />}
+            />
+            <Route
+              path="/MyFeeds"
+              element={
+                <MyFeeds feeds={feeds} articles={articles} setArticles={setArticles} removeFeed={removeFeed} setError={setError} singleSelectOptions2={singleSelectOptions2} error={error}>
 
+                  <Route element={<FeedArticlesContainer articles={articles} setError={setError} />} />
+                </MyFeeds>
+              }
+            />
+            <Route path="/*" element={<Error setError={setError} />} />
+          </Routes>
         </div>
         {error && <Error message={error} setError={setError} />}
       </div>
