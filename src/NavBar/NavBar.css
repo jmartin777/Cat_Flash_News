@@ -4,6 +4,14 @@ a {
     font-size: 22px;
     font-weight: 300; 
     text-decoration: none;
+    background-color: #007bff36; 
+    color: #fff; 
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
   }
   
   .navbar {
@@ -14,6 +22,7 @@ a {
     align-items: center;
     padding: inherit;
     border-radius: 60px;
+    height: 240px;
   }
   
   .logo {
@@ -29,7 +38,7 @@ a {
   
   .nav-links a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
   }
   
   .nav-links a:hover {
@@ -46,80 +55,77 @@ a {
     height: auto; 
   }
 
-  @media (max-width: 991px) {
-.navbar {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.nav-links a {
-  font-size: 18px; 
-}
-
-.nav-links {
-  flex-direction: column;
-  gap: 10px;
-}
-
-.logo-image {
-  width: 300px;
-  height: 60px;
+  .nav-button {
+    background: #007bff36; 
+    color: #fff; 
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
   }
-}
-
-@media (max-width: 767px) {
-.navbar {
-  display: flex;
   
-}
-
-.nav-links a {
-  font-size: 16px; 
-}
-
-.nav-links {
-  flex-direction: column;
-  gap: 5px;
-}
-
-.logo-image {
-  width: 300px;
-  height: 60px;
+  .nav-button:hover {
+    background-color: #0056b3; 
   }
-}
 
-@media (max-width: 495px) {
-.navbar {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-links {
-  flex-direction: column;
-  gap: 3px;
-}
-
-.logo-image {
-  width: 300px;
-  height: 60px;
-  margin-left: 4px;
+  @media (max-width: 991px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 18px;
+    }
+  
+    .logo-image {
+      width: 330px;
+      height: 310px;
+    }
   }
-}
-
-@media (max-width: 363px) {
-.navbar {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-links {
-  flex-direction: column;
-  gap: 3px;
-}
-
-.logo-image {
-  width: 265px;
-  height: 60px;
+  
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 5px;
+    }
+  
+    .nav-links a {
+      font-size: 16px;
+    }
+  
+    .logo-image {
+      width: 330px;
+      height: 310px;
+    }
   }
-}
+
+  @media (max-width: 495px) {
+    .navbar {
+      padding: 3px;
+    }
+  
+    .nav-links a {
+      font-size: 14px;
+    }
+  
+    .logo-image {
+      width: 250px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 363px) {
+    .navbar {
+      padding: 3px;
+    }
+  
+    .nav-links a {
+      font-size: 12px;
+    }
+  
+    .logo-image {
+      width: 200px;
+      height: 40px;
+    }
+  }

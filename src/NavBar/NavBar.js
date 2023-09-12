@@ -15,10 +15,11 @@ const Navbar = () => {
       />
       <ul className="nav-links">
         <li>
-          <Link to="/MyFeeds">My News</Link>
+          <Link to="/MyFeeds" className="nav-button">
+            My News
+          </Link>
         </li>
       </ul>
-      
     </nav>
   );
 };

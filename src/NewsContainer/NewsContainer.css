@@ -41,7 +41,8 @@
   .article-link {
     display: block;
     text-align: right;
-    color: #007bff;
+    color: white;
+    font-weight: bold;
   }
 
   .article-link:hover {
