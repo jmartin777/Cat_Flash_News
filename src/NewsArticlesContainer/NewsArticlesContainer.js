@@ -18,7 +18,7 @@ const renderArticles = (articles) => {
   );
 };
 
-const FeedArticlesContainer = ({ articles, setError }) => {
+const NewsArticlesContainer = ({ articles, setError }) => {
   const isLoading = articles.length === 0;
 
   return (
@@ -34,7 +34,7 @@ const FeedArticlesContainer = ({ articles, setError }) => {
   );
 };
 
-FeedArticlesContainer.propTypes = {
+NewsArticlesContainer.propTypes = {
   articles: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -46,4 +46,4 @@ FeedArticlesContainer.propTypes = {
   setError: PropTypes.func,
 };
 
-export default FeedArticlesContainer;
+export default NewsArticlesContainer;

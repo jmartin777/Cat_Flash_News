@@ -1,5 +1,5 @@
 a {
-    color:  #5df8e4;
+  color: #000000;
     font-family: inherit;
     font-size: 22px;
     font-weight: 300; 
@@ -13,6 +13,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     padding: inherit;
+    border-radius: 60px;
   }
   
   .logo {
@@ -28,7 +29,7 @@ a {
   
   .nav-links a {
     text-decoration: none;
-  color:  #5df8e4;
+    color: #000000;
   }
   
   .nav-links a:hover {
@@ -36,8 +37,8 @@ a {
   }
   
   .logo-image {
-  width: 500px;
-  height: 90px;
+    width: 560px;
+    height: 515px;
   }
   
   .brand-logo {
@@ -46,79 +47,79 @@ a {
   }
 
   @media (max-width: 991px) {
-    .navbar {
-      display: flex;
-      flex-direction: column;
-    
-    }
-    
-    .nav-links a {
-      font-size: 18px; 
-    }
-    
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    .logo-image {
-      width: 300px;
-      height: 60px;
-      }
-    }
-    
-    @media (max-width: 767px) {
-    .navbar {
-      display: flex;
-      
-    }
-    
-    .nav-links a {
-      font-size: 16px; 
-    }
-    
-    .nav-links {
-      flex-direction: column;
-      gap: 5px;
-    }
-    
-    .logo-image {
-      width: 300px;
-      height: 60px;
-      }
-    }
-    
-    @media (max-width: 495px) {
-    .navbar {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .nav-links {
-      flex-direction: column;
-      gap: 3px;
-    }
-    
-    .logo-image {
-      width: 300px;
-      height: 60px;
-      margin-left: 4px;
-      }
-    }
-    
-    @media (max-width: 363px) {
-    .navbar {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .nav-links {
-      flex-direction: column;
-      gap: 3px;
-    }
-    
-    .logo-image {
-      width: 265px;
-      height: 60px;
-      }
-    }
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav-links a {
+  font-size: 18px; 
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 300px;
+  height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+.navbar {
+  display: flex;
+  
+}
+
+.nav-links a {
+  font-size: 16px; 
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logo-image {
+  width: 300px;
+  height: 60px;
+  }
+}
+
+@media (max-width: 495px) {
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 3px;
+}
+
+.logo-image {
+  width: 300px;
+  height: 60px;
+  margin-left: 4px;
+  }
+}
+
+@media (max-width: 363px) {
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 3px;
+}
+
+.logo-image {
+  width: 265px;
+  height: 60px;
+  }
+}

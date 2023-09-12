@@ -1,10 +1,10 @@
 .error-container {
-    background-color: #007bff;
+    background-color: #5df8e4;
     color: aliceblue;
-    border: 1px solid #007bff;
+    border: 1px solid #5df8e4;
     padding: 12px;
     margin: 20px 0;
-    border-radius: 4px;
+    border-radius: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;

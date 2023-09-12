@@ -19,7 +19,7 @@ const renderArticles = (articles) => {
   );
 };
 
-const ArticlesContainer = ({ articles, setError }) => {
+const NewsContainer = ({ articles, setError }) => {
   const isLoading = articles.length === 0;
 
   return (
@@ -35,7 +35,7 @@ const ArticlesContainer = ({ articles, setError }) => {
   );
 };
 
-ArticlesContainer.propTypes = {
+NewsContainer.propTypes = {
   articles: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -47,4 +47,4 @@ ArticlesContainer.propTypes = {
   setError: PropTypes.func.isRequired,
 };
 
-export default ArticlesContainer;
+export default NewsContainer;

@@ -1,9 +1,10 @@
 .articles-container {
     max-height: 750px;
     overflow-y: auto;
-    background-color:#61dafb;
+    background-color:#5df8e4;
     scrollbar-width: thin;
-    scrollbar-color: #aaaaaa#61dafb;
+    scrollbar-color: #aaaaaa#5df8e4;
+    border-radius: 60px;
   }
   
   .articles-list {

@@ -9,20 +9,16 @@ const Navbar = () => {
         Home
       </Link>
       <img
-        src="/whitetrove.png"
-        alt="Trove Logo" 
+        src="/brandflash.png"
+        alt="cat-flash-logo" 
         className="logo-image"
       />
-      {/* <img
-        src="BrandPhoto"
-        alt="Brand"
-        className="brand-logo"
-      /> */}
       <ul className="nav-links">
         <li>
           <Link to="/MyFeeds">My News</Link>
         </li>
       </ul>
+      
     </nav>
   );
 };
