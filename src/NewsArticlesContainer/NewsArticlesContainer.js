@@ -5,9 +5,9 @@ import '../NewsArticlesContainer/NewsArticlesContainer.css';
 import { Link } from 'react-router-dom';
 
 const renderArticles = (articles) => {
-  return articles.map((article, index) =>
+  return articles.map((article) =>
     article.title && article.urlToImage && article.description && article.url ? (
-      <Link to={`/article/${article.id}`} key={article.id || index} className="article-link">
+      <Link to={`/article/${article.id}`} key={article.id} className="article-link">
         <div className="article-item">
           <img src={article.urlToImage} alt={article.title} className="article-image" />
           <h3 className="article-title">{article.title}</h3>
@@ -17,7 +17,6 @@ const renderArticles = (articles) => {
     ) : null
   );
 };
-
 
 const NewsArticlesContainer = ({ articles, setError }) => {
   const isLoading = articles.length === 0;

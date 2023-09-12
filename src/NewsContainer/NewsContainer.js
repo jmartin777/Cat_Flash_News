@@ -6,20 +6,19 @@ import '../NewsContainer/NewsContainer.css';
 import { Link } from 'react-router-dom';
 
 const renderArticles = (articles) => {
-  return articles.map((article, index) =>
+  return articles.map((article) =>
     article.title && article.urlToImage && article.description && article.url ? (
-      <Link to={`/article/${article.id}`} key={article.id || index} className="article-link">
-        <div className="article-item">
-          <img src={article.urlToImage} alt={article.title} className="article-image" />
-          <h3 className="article-title">{article.title}</h3>
-          <p className="article-description">{article.description}</p>
-        </div>
-      </Link>
+      <div key={article.title} className="article-item">
+        <img src={article.urlToImage} alt={article.title} className="article-image" />
+        <h3 className="article-title">{article.title}</h3>
+        <p className="article-description">{article.description}</p>
+        <a href={article.url} className="article-link" target="_blank" rel="noopener noreferrer">
+          Read More
+        </a>
+      </div>
     ) : null
   );
 };
-
-
 
 const NewsContainer = ({ articles, setError }) => {
   const isLoading = articles.length === 0;
@@ -27,7 +26,7 @@ const NewsContainer = ({ articles, setError }) => {
   return (
     <div className="articles-container">
       {isLoading ? (
-        <p>Loading...</p>
+        <p></p>
       ) : articles.length === 0 ? (
         <p>No articles match criteria.</p>
       ) : (
@@ -37,17 +36,16 @@ const NewsContainer = ({ articles, setError }) => {
   );
 };
 
-// NewsContainer.propTypes = {
-//   articles: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired, // You should include an 'id' property in your articles
-//       title: PropTypes.string.isRequired,
-//       urlToImage: PropTypes.string,
-//       description: PropTypes.string,
-//       url: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-//   setError: PropTypes.func.isRequired,
-// };
+NewsContainer.propTypes = {
+  articles: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      urlToImage: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  setError: PropTypes.func.isRequired,
+};
 
 export default NewsContainer;

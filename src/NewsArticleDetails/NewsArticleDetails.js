@@ -1,11 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 const NewsArticleDetails = ({ articles }) => {
   const { id } = useParams();
 
   const article = articles.find((article) => article.id === id);
+ 
 
   if (!article) {
     return <p>Article not found.</p>;
