@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
-import { acquireTailoredInfo } from '../Api/Api';
+import { acquireTailoredInfo } from '../Api';
 import PropTypes from 'prop-types';
 import Error from '../Error/Error';
 import '../MainSearchForm/MainSearchForm.css'

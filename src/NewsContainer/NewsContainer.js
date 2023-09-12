@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Error from '../Error/Error.js';
 import '../App/App.css';
-import '../ArticlesContainer/ArticlesContainer.css';
+import '../NewsContainer/NewsContainer.css';
 
 const renderArticles = (articles) => {
   return articles.map((article) =>

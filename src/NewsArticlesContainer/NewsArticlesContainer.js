@@ -1,7 +1,7 @@
 import React from 'react';
 import Error from '../Error/Error.js';
 import PropTypes from 'prop-types';
-import '../FeedArticlesContainer/FeedArticlesContainer.css';
+import '../NewsArticlesContainer/NewsArticlesContainer.css';
 
 const renderArticles = (articles) => {
   return articles.map((article) =>

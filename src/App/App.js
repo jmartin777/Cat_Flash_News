@@ -1,12 +1,12 @@
 import React, { useState,  useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { acquireInfo } from '../Api/Api';
-import ArticlesContainer from '../ArticlesContainer/ArticlesContainer';
+import { acquireInfo } from '../Api';
+import ArticlesContainer from '../NewsContainer/NewsContainer';
 import Error from '../Error/Error';
 import Navbar from '../NavBar/NavBar';
 import MainSearchForm from '../MainSearchForm/MainSearchForm';
 import MyFeeds from '../MyFeeds/MyFeeds';
-import FeedArticlesContainer from '../FeedArticlesContainer/FeedArticlesContainer';
+import FeedArticlesContainer from '../NewsArticlesContainer/NewsArticlesContainer';
 import '../App/App.css';
 
 function App() {
