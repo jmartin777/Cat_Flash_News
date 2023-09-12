@@ -1,0 +1,73 @@
+.my-feeds {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .my-feeds h2 {
+    margin-bottom: 10px;
+    color: aliceblue;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: 300;
+  }
+  
+  .my-feeds ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .my-feeds li {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+    background-color: #007bff; 
+    color: white; 
+    padding: 8px 16px; 
+    border-radius: 8px;
+    width: 20em;
+    font-style: italic;
+    font-weight: bold;
+    color: aliceblue;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .my-feeds button {
+    padding: 5px 10px;
+    background-color: slategrey;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .saved-feeds-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg,#007bff, transparent);
+  }
+
+  @media (max-width: 991px) {
+    .my-feeds li {
+      font-size: 20px; 
+      width: 18em; 
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .my-feeds li {
+      font-size: 18px; 
+      width: 16em; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .my-feeds li {
+      font-size: 16px; 
+      width: 14em; 
+    }
+  }
