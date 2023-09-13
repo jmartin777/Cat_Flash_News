@@ -1,6 +1,6 @@
 <div align="center">
-<h1> Article Trove </h1>
-"Stay Informed, Your Way: Article Trove"
+<h1> Cat Flash News ⚡️ </h1>
+"Stay Informed, Your Way: Cat Flash News ⚡️ !"
 <br> 
 
 <br>
