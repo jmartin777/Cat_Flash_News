@@ -1,0 +1,35 @@
+.news-article-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+  width: 60%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.article-title {
+  margin: 10px 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.article-description {
+  font-size: 20px; 
+  margin: 10px 0;
+  color: #666;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+}

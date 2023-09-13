@@ -1,34 +1,18 @@
 import React from 'react';
-import Error from '../Error/Error.js';
 import PropTypes from 'prop-types';
 import '../NewsArticlesContainer/NewsArticlesContainer.css';
-
-const renderArticles = (articles) => {
-  return articles.map((article) =>
-    article.title && article.urlToImage && article.description && article.url ? (
-      <div key={article.title} className="article-item">
-        <img src={article.urlToImage} alt={article.title} className="article-image" />
-        <h3 className="article-title">{article.title}</h3>
-        <p className="article-description">{article.description}</p>
-        <a href={article.url} className="article-link" target="_blank" rel="noopener noreferrer">
-          Read More
-        </a>
-      </div>
-    ) : null
-  );
-};
+import NewsContainer from '../NewsContainer/NewsContainer'; // Import NewsContainer
 
 const NewsArticlesContainer = ({ articles, setError }) => {
   const isLoading = articles.length === 0;
+  
 
   return (
     <div className="articles-container">
       {isLoading ? (
-        <p></p>
-      ) : articles.length === 0 ? (
-        <p>No articles match criteria.</p>
+        <p>Loading...</p> 
       ) : (
-        <div className="articles-list">{renderArticles(articles)}</div>
+        <NewsContainer articles={articles} setError={setError} />
       )}
     </div>
   );
@@ -37,6 +21,7 @@ const NewsArticlesContainer = ({ articles, setError }) => {
 NewsArticlesContainer.propTypes = {
   articles: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string,
       title: PropTypes.string,
       urlToImage: PropTypes.string,
       description: PropTypes.string,
