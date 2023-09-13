@@ -26,20 +26,10 @@ The news feed application is a user-friendly and visually appealing web platform
 
 <div align="center">
 
-  <h2> Cell Phone Display: </h2>
+  <h2> Application Display: </h2>
  <!-- ADD phone preview here -->
 
   <br>  
-
-  <h2> Search/Save a Feed: </h2>
-<!-- ADD journal preview here -->
-
-  <br>
-
-  <h2> Bad URL & Empty State: </h2>
- <!-- ADD sad path preview here -->
-
-  <br>
 
 </div>
 
