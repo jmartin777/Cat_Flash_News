@@ -74,7 +74,7 @@ function App() {
   useEffect(() => {
     fetchRandomHeadlines();
   }, []);
-  
+  console.log('Articles Data1:', articles);
   return (
     <Router>
       <div>
@@ -84,26 +84,18 @@ function App() {
           />
         </div>
         <div className="articles-container">
-          <Routes>
-            <Route path="/" element={<ArticlesContainer articles={articles} setError={setError} />}
-            />
-            <Route path="/article/:id" element={<NewsArticleDetails articles={articles} />} />
-            <Route
-              path="/MyFeeds"
-              element={
-                <MyFeeds feeds={feeds} articles={articles} setArticles={setArticles} removeFeed={removeFeed} setError={setError} singleSelectOptions2={singleSelectOptions2} error={error}>
-
-                  <Route element={<FeedArticlesContainer articles={articles} setError={setError} />} />
-                </MyFeeds>
-              }
-            />
-            <Route path="/*" element={<Error setError={setError} />} />
-          </Routes>
-        </div>
-        {error && <Error message={error} setError={setError} />}
-      </div>
-    </Router>
+        <Routes>
+      <Route path="/" element={<ArticlesContainer articles={articles} setError={setError} />} />
+      <Route path="/article/:id" element={<NewsArticleDetails articles={articles} />} />
+      <Route path="/MyFeeds" element={<MyFeeds feeds={feeds} articles={articles} setArticles={setArticles} removeFeed={removeFeed} setError={setError} singleSelectOptions2={singleSelectOptions2} error={error} />} />
+      <Route path="/MyFeeds/articles" element={<FeedArticlesContainer articles={articles} setError={setError} />} />
+      <Route path="/error" element={<Error setError={setError} />} />
+    </Routes>
+    </div>
+  </div>
+</Router>
   );
 }
+
 
 export default App;

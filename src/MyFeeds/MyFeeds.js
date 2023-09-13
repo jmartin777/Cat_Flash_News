@@ -39,7 +39,7 @@ useEffect(() => {
   return (
     <div className="my-feeds">
       <div className="saved-feeds-container">
-        <h2>My Feeds  ☑️</h2>
+        <h2>My News ☑️ </h2>
         <ul>
           {feeds.map((feed, index) => (
             <li className="my-feeds-list" key={index} onClick={() => handleFeedClick(feed)}>
