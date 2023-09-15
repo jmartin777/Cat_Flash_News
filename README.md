@@ -28,6 +28,11 @@ The news feed application is a user-friendly and visually appealing web platform
 
   <h2> Application Display: </h2>
  <!-- ADD phone preview here -->
+ <img src= https://github.com/jmartin777/Cat_Flash_News/assets/76410246/dca16d14-a26d-4625-8f91-0ed0fcadd703>
+<img src= https://github.com/jmartin777/Cat_Flash_News/assets/76410246/80c50451-1b1c-44b7-a503-2d6640e74232>
+<img src=https://github.com/jmartin777/Cat_Flash_News/assets/76410246/184dedb4-293a-4961-856d-f032c2470ad7>
+
+
 
   <br>  
 
