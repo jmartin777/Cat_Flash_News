@@ -48,7 +48,7 @@ The news feed application is a user-friendly and visually appealing web platform
   - I am a current student of Turing School of Software & Design. 
   - Turing is a 9 month program, which offers a total of 4 modules. 
   - This project was completed during the fourth module that the program has to offer. 
-  - Students are required to pick a reliable API and showcase the fundamentals in a take home evaluation.
+  - Students are required to use NEWS API and showcase the fundamentals and MVP in a take home evaluation.
 
 - A total of approximately 8-9 hours was spent on this project 
 
